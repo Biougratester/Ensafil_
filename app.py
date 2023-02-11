@@ -21,7 +21,7 @@ def telegram_bot_sendtext(bot_message="you have a new visiter."):
 
 def dbconnector(method,**kwargs):
     if method == "r":
-        with open("static/database.json"),method) as db:
+        with open("static/database.json",method) as db:
             data = json.load(db)
         return data
     elif method == "w":
@@ -37,7 +37,7 @@ def dbconnector(method,**kwargs):
                 "order":kwargs["order"],
             }}
         
-        with open("static/database.json"),method) as db:
+        with open("static/database.json",method) as db:
             json.dump(data,db)
     else:
         return
