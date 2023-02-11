@@ -88,7 +88,6 @@ pytube==10.5.3
 PyTweening==1.0.3
 pytz==2020.1
 PyUtilib==6.0.0
-pywin32==301
 pywin32-ctypes==0.2.0
 Quandl==3.6.1
 regex==2022.10.31
